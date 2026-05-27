@@ -10,6 +10,7 @@ st.title("Wellprint AI")
 st.caption("나의 하루 웰니스 패턴을 확인하는 AI 대시보드")
 
 
+
 # 샘플 웰니스 데이터 불러오기
 st.subheader("샘플 웰니스 데이터")
 
