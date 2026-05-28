@@ -3,8 +3,8 @@ def calculate_wellness_score(row):
     Calculate a simple wellness score from lifestyle burden factors.
     This score is not a medical diagnosis.
     """
-
     score = 50
+
 
     # Sleep score
     sleep_hours = row.get("sleep_hours", 0)
@@ -74,6 +74,7 @@ def calculate_wellness_score(row):
     score = max(0, min(100, score))
 
     return round(score, 1)
+
 
 
 def get_wellness_level(score):
