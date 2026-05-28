@@ -9,13 +9,10 @@ import plotly.express as px
 st.title("Wellprint AI")
 st.caption("나의 하루 웰니스 패턴을 확인하는 AI 대시보드")
 
-
-
 # 샘플 웰니스 데이터 불러오기
 st.subheader("샘플 웰니스 데이터")
 
 df = pd.read_csv("data/sample_wellness_data.csv")
-
 
 # 웰니스 점수와 등급 계산
 df["wellness_score"] = df.apply(calculate_wellness_score, axis=1)
